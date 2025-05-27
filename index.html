@@ -7,30 +7,35 @@
   <style>
     :root {
       --amarelo-rei: #c9a500;
+      --vermelho-sangue: #5a0000;
+      --cinza-esverdeado: #444;
     }
 
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Georgia', serif;
       background-color: #0d0d0d;
       color: var(--amarelo-rei);
     }
 
     header {
-      background-color: #121212;
+      background-color: #0d0d0d;
       text-align: center;
       padding: 60px 20px;
+      border-bottom: 2px solid var(--amarelo-rei);
     }
 
     header h1 {
       font-size: 3em;
       margin: 0;
       color: var(--amarelo-rei);
+      letter-spacing: 2px;
     }
 
     header p {
       font-size: 1.2em;
-      color: #aaa;
+      color: var(--cinza-esverdeado);
+      font-style: italic;
     }
 
     section {
@@ -41,9 +46,10 @@
 
     h2 {
       color: var(--amarelo-rei);
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid var(--cinza-esverdeado);
       padding-bottom: 10px;
       margin-bottom: 30px;
+      font-family: 'Georgia', serif;
     }
 
     .projects {
@@ -53,22 +59,23 @@
     }
 
     .project {
-      background-color: #1e1e1e;
-      border-radius: 12px;
+      background-color: #1a1a1a;
+      border-left: 4px solid var(--vermelho-sangue);
+      border-radius: 8px;
       padding: 20px;
       color: var(--amarelo-rei);
+      box-shadow: 0 0 10px rgba(201, 165, 0, 0.1);
       transition: transform 0.2s;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
     }
 
     .project:hover {
-      transform: translateY(-5px);
+      transform: scale(1.02);
     }
 
     input, textarea {
       width: 100%;
       background: #121212;
-      border: 1px solid #333;
+      border: 1px solid var(--cinza-esverdeado);
       color: var(--amarelo-rei);
       padding: 12px;
       margin-bottom: 20px;
@@ -76,8 +83,8 @@
     }
 
     button {
-      background-color: var(--amarelo-rei);
-      color: #121212;
+      background-color: var(--vermelho-sangue);
+      color: #fff;
       padding: 12px 24px;
       border: none;
       border-radius: 6px;
@@ -87,57 +94,19 @@
     }
 
     button:hover {
-      background-color: #a78f00;
+      background-color: #3d0000;
     }
 
     footer {
-      background: #121212;
-      color: #777;
+      background: #0d0d0d;
+      color: var(--cinza-esverdeado);
       text-align: center;
       padding: 30px 10px;
       font-size: 0.9em;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Seu Nome</h1>
-  <p>Desenvolvedor | Criador de Mundos Digitais</p>
-</header>
-
-<section>
-  <h2>Sobre Mim</h2>
-  <p>Sou um desenvolvedor com alma criativa, explorando o desconhecido por meio de código e design. O caos é meu reino.</p>
-</section>
-
-<section>
-  <h2>Projetos</h2>
-  <div class="projects">
-    <div class="project">
-      <h3>Projeto Carcosa</h3>
-      <p>Site inspirado em narrativas sombrias, com atmosferas densas e paletas sobrenaturais.</p>
-    </div>
-    <div class="project">
-      <h3>Máscaras da Loucura</h3>
-      <p>Aplicação interativa para criar máscaras e ilusões visuais baseadas em poesia gótica.</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2>Contato</h2>
-  <form onsubmit="event.preventDefault(); alert('A névoa respondeu.');">
-    <input type="text" placeholder="Seu nome" required />
-    <input type="email" placeholder="Seu email" required />
-    <textarea placeholder="Sua mensagem" rows="5" required></textarea>
-    <button type="submit">Chamar</button>
-  </form>
-</section>
-
-<footer>
-  &copy; 2025 Seu Nome. Não há mais máscaras.
-</footer>
-
-</body>
-</html>
+<head
