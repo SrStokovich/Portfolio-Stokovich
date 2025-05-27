@@ -3,39 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio - Rei de Amarelo</title>
+  <title>Portfólio - Tema Escuro</title>
   <style>
     :root {
-      --amarelo-rei: #c9a500;
-      --vermelho-sangue: #5a0000;
-      --cinza-esverdeado: #444;
+      --rei-amarelo: #c9a500;
     }
 
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
+      font-family: 'Segoe UI', sans-serif;
       background-color: #0d0d0d;
-      color: var(--amarelo-rei);
+      color: var(--rei-amarelo);
     }
 
     header {
-      background-color: #0d0d0d;
+      background-color: #121212;
       text-align: center;
       padding: 60px 20px;
-      border-bottom: 2px solid var(--amarelo-rei);
     }
 
     header h1 {
       font-size: 3em;
       margin: 0;
-      color: var(--amarelo-rei);
-      letter-spacing: 2px;
+      color: var(--rei-amarelo);
     }
 
     header p {
       font-size: 1.2em;
-      color: var(--cinza-esverdeado);
-      font-style: italic;
+      color: #aaa;
     }
 
     section {
@@ -45,11 +40,10 @@
     }
 
     h2 {
-      color: var(--amarelo-rei);
-      border-bottom: 1px solid var(--cinza-esverdeado);
+      color: var(--rei-amarelo);
+      border-bottom: 1px solid #333;
       padding-bottom: 10px;
       margin-bottom: 30px;
-      font-family: 'Georgia', serif;
     }
 
     .projects {
@@ -59,32 +53,31 @@
     }
 
     .project {
-      background-color: #1a1a1a;
-      border-left: 4px solid var(--vermelho-sangue);
-      border-radius: 8px;
+      background-color: #1e1e1e;
+      border-radius: 12px;
       padding: 20px;
-      color: var(--amarelo-rei);
-      box-shadow: 0 0 10px rgba(201, 165, 0, 0.1);
+      color: var(--rei-amarelo);
       transition: transform 0.2s;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
     }
 
     .project:hover {
-      transform: scale(1.02);
+      transform: translateY(-5px);
     }
 
     input, textarea {
       width: 100%;
       background: #121212;
-      border: 1px solid var(--cinza-esverdeado);
-      color: var(--amarelo-rei);
+      border: 1px solid #333;
+      color: var(--rei-amarelo);
       padding: 12px;
       margin-bottom: 20px;
       border-radius: 6px;
     }
 
     button {
-      background-color: var(--vermelho-sangue);
-      color: #fff;
+      background-color: var(--rei-amarelo);
+      color: #121212;
       padding: 12px 24px;
       border: none;
       border-radius: 6px;
@@ -94,19 +87,57 @@
     }
 
     button:hover {
-      background-color: #3d0000;
+      background-color: #a78f00;
     }
 
     footer {
-      background: #0d0d0d;
-      color: var(--cinza-esverdeado);
+      background: #121212;
+      color: #666;
       text-align: center;
       padding: 30px 10px;
       font-size: 0.9em;
-      font-style: italic;
     }
   </style>
 </head>
 <body>
 
-<head
+<header>
+  <h1>Seu Nome</h1>
+  <p>Desenvolvedor Front-End | UI Designer</p>
+</header>
+
+<section>
+  <h2>Sobre Mim</h2>
+  <p>Sou um desenvolvedor apaixonado por criar experiências digitais elegantes, funcionais e misteriosas.</p>
+</section>
+
+<section>
+  <h2>Projetos</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Projeto A</h3>
+      <p>Landing page responsiva com animações suaves e atmosfera sombria.</p>
+    </div>
+    <div class="project">
+      <h3>Projeto B</h3>
+      <p>Dashboard com gráficos esotéricos e tipografia inspirada em mitos antigos.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contato</h2>
+  <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso.');">
+    <input type="text" placeholder="Seu nome" required />
+    <input type="email" placeholder="Seu email" required />
+    <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Seu Nome. As estrelas estão certas.
+</footer>
+
+</body>
+</html>
